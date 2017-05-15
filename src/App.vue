@@ -13,7 +13,7 @@
 export default {
   data () {
     return {
-      rootmsg: '根组件'
+      rootmsg: 'root-component'
     }
   },
   name: 'app'
