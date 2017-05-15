@@ -13,7 +13,7 @@
 export default {
   data () {
     return {
-      rootmsg: 'root-component'
+      rootmsg: 'root'
     }
   },
   name: 'app'
