@@ -4,6 +4,8 @@
 		<h1 id="msg">{{ msg }}</h1>
 		<span class="caus">hello world</span>
 		<span> {{ $route.params.id }}</span>
+		<span> {{ count }}</span>
+    <span> Getters {{ this.$store.getters.doneTodos[0].id}}</span>
 		<router-view name="a"></router-view>
 	</div>
 </template>
@@ -15,6 +17,12 @@ export default {
     return {
       msg: 'test',
       data: 123
+    }
+  },
+  computed: {
+    count () {
+      this.$store.commit('increment')
+      return this.$store.state.count
     }
   }
 }
